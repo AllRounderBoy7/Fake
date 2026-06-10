@@ -5,8 +5,11 @@ const asNumber = (value: string | undefined, fallback: number) => {
 };
 
 export const APP_ENV = {
-  SUPABASE_URL: import.meta.env.VITE_SUPABASE_URL ?? '',
-  SUPABASE_ANON_KEY: import.meta.env.VITE_SUPABASE_ANON_KEY ?? '',
+  SUPABASE_URL:
+    import.meta.env.VITE_SUPABASE_URL ?? 'https://xsiycnqqgadtjmkolftx.supabase.co',
+  SUPABASE_ANON_KEY:
+    import.meta.env.VITE_SUPABASE_ANON_KEY ??
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhzaXljbnFxZ2FkdGpta29sZnR4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEwNjk0NzAsImV4cCI6MjA5NjY0NTQ3MH0.kD01DmetEkwzp5eYf96nGlHRaIAwYqW05OqnsUCjvBs',
   SMART_LINK:
     import.meta.env.VITE_AD_SMARTLINK_URL ??
     'https://drainalmost.com/h3afaqfwhx?key=553c3d8daad9d9dfc17c316458eff43c',
